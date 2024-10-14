@@ -1,0 +1,44 @@
+html{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 62.5%
+}
+header{
+    background-color: #0c63f1;
+}
+footer{
+    background-color: #0c63f1;
+}
+.banner{
+    text-align: center;
+    background-image:  url(../media/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 3rem;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.logo{
+color: aqua;
+height: 50px;
+width: min-content;
+}
+
+.inline{
+    display: inline;
+    color: red;
+    font-weight: bold;
+}
