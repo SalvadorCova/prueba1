@@ -1,20 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Generales */
 html{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 62.5%
 }
-header{
-    background-color: #0c63f1;
-}
-footer{
-    background-color: #0c63f1;
-}
-.banner{
-    text-align: center;
-    background-image:  url(../media/banner.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 h1{
     font-size: 3rem;
 }
@@ -31,14 +26,240 @@ p{
     font-size: 1.5rem;
 }
 
+ /*header*/
+ header{
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: sticky;
+      top:0px;
+ }
+ 
+header img{
+    height: 30px;
+    margin: 4px;
+
+}
+nav{
+    width: 40%;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+header a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Main  */
+.banner{
+    text-align: center;
+    background-image:  url(../media/bannerOtoño.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 1px -1px 25px black;
+    color: white;
+    padding: 150px;
+}
+
 .logo{
-color: aqua;
+color: blue;
 height: 50px;
 width: min-content;
 }
 
-.inline{
-    display: inline;
-    color: red;
-    font-weight: bold;
+/*SECTION PRODUCTO*/
+.productos h2{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(244, 168, 111);
+    font-size: 2.5rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+/*Fotos bikes*/
+ 
+.bikeFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: 5px;
+    background-color: rgb(247, 221, 201);
+    text-align: center;
+    color: black;
+}
+.bikeFlex h3{
+    font-size: 1.7rem;
+}
+
+.bikeFlex img{
+    display: flex;
+    height: 300px;
+    margin: 5px;
+    padding: 1px;
+    max-width: 100%
+}
+
+/*SECTION eventos*/
+.eventos{
+    border: 1px;
+    border-color: black;
+    background-color:rgb(244, 241, 237);
+}
+
+.eventos h2{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.eventos p{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.next-events
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/*SECTION Historia*/
+
+.historia h2{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+.historia p{
+    background-color: blue;
+    padding: 10px;
+}
+
+.contacto{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    text-align: center;
+    padding: 5px;
+}
+/*Footer*/
+footer{
+    padding: 10px;
+    background-color: rgb(224, 224, 246);
+    align-items: right;
+    border-radius: 10px;
+}
+
+
+.footerbar{
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 50px;
+}
+
+/*Pagina de contacto*/
+    
+.informacion{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.informacion h1{
+    text-align: center;
+    text-decoration: none;
+} 
+
+/*Pagina de Ventas*/
+
+
+.formulario{
+
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(238, 151, 84);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color:white;
+   box-shadow: 7px 13px 37px #000;
+}
+.formulario h1{
+    text-align: center;
+    text-decoration: none;
+}
+
+.cuestionario{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    align-items: justify;
+    
+
+}
+
+.cuestionario input, textarea{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;  
+    border: 1px solid #1f53c5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+.cuestionario button{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color white;
+    margin: 16px 0;
+    font-size: 16px;
+    color: white;
+
 }
